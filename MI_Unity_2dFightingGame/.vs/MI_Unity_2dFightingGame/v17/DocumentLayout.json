@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|c:\\users\\akilis\\documents\\github\\mi_unity_2dfigthinggame\\mi_unity_2dfightinggame\\assets\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|c:\\users\\akilis\\documents\\github\\mi_unity_2dfigthinggame\\mi_unity_2dfightinggame\\assets\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\backgroundscripts\\copybackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\backgroundscripts\\copybackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\PlayerControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\PlayerControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|c:\\users\\akilis\\documents\\github\\mi_unity_2dfigthinggame\\mi_unity_2dfightinggame\\assets\\parallaxscrolling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\parallaxscrolling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,20 +30,28 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CameraMovement.cs",
-              "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\CameraMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\CameraMovement.cs",
-              "ToolTip": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\CameraMovement.cs",
-              "RelativeToolTip": "Assets\\CameraMovement.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAuwBQAAABdAAAA",
+              "DocumentIndex": 2,
+              "Title": "ParallaxScrolling.cs",
+              "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\ParallaxScrolling.cs",
+              "RelativeDocumentMoniker": "Assets\\ParallaxScrolling.cs",
+              "ToolTip": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\ParallaxScrolling.cs",
+              "RelativeToolTip": "Assets\\ParallaxScrolling.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T14:02:36.507Z",
+              "WhenOpened": "2024-05-18T13:42:27.579Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Enemy\\Enemy.cs",
+              "ToolTip": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Enemy\\Enemy.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T12:57:44.948Z"
             },
             {
               "$type": "Document",
@@ -49,21 +61,23 @@
               "RelativeDocumentMoniker": "Assets\\Player\\PlayerControl.cs",
               "ToolTip": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\Player\\PlayerControl.cs",
               "RelativeToolTip": "Assets\\Player\\PlayerControl.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAADEAAAAsAAAA",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAuwLEAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:52:48.192Z",
+              "WhenOpened": "2024-05-18T11:34:16.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerControl.cs",
-              "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\PlayerControl.cs",
-              "RelativeDocumentMoniker": "Assets\\PlayerControl.cs",
-              "ToolTip": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\PlayerControl.cs",
-              "RelativeToolTip": "Assets\\PlayerControl.cs",
+              "DocumentIndex": 1,
+              "Title": "CopyBackGround.cs",
+              "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\BackGroundScripts\\CopyBackGround.cs",
+              "RelativeDocumentMoniker": "Assets\\BackGroundScripts\\CopyBackGround.cs",
+              "ToolTip": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\BackGroundScripts\\CopyBackGround.cs",
+              "RelativeToolTip": "Assets\\BackGroundScripts\\CopyBackGround.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwBgAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:19:23.527Z"
+              "WhenOpened": "2024-05-17T08:37:50.606Z",
+              "EditorCaption": ""
             }
           ]
         }
