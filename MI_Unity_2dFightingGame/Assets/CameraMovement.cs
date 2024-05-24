@@ -18,6 +18,6 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
-        cameraRB.velocity = (playerTF.position + new Vector3(0f, 2f) - cameraTF.position) * 5f;
+        cameraRB.velocity = (playerTF.position + new Vector3(0f, 3.5f) - cameraTF.position) * 5f;
     }
 }
