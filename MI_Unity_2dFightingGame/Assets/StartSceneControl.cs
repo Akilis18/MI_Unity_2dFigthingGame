@@ -6,13 +6,20 @@ using UnityEngine.UI;
 
 public class StartSceneControl : MonoBehaviour
 {
+    public Button btnSetting;
     public Button btnStart;
     public Button btnClose;
 
     void Start()
     {
+        btnSetting.onClick.AddListener(ChangeSettingScene);
         btnStart.onClick.AddListener(ChangeScene);
         btnClose.onClick.AddListener(CloseGame);
+    }
+
+    private void ChangeSettingScene()
+    {
+        SceneManager.LoadScene("SettingScene");
     }
 
     private void ChangeScene()

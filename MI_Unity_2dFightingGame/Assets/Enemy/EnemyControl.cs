@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyControl : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class EnemyControl : MonoBehaviour
     private AnimatorStateInfo enemySInfo;
     private Rigidbody2D enemyRB;
     private SpriteRenderer enemySR;
+
+    private float hitTm;
 
     private double xDiff;
     private double yDiff;
@@ -31,6 +34,8 @@ public class EnemyControl : MonoBehaviour
         yDiff = 0;
 
         HP = 70;
+
+        hitTm = 0;
     }
 
     // Update is called once per frame
@@ -42,89 +47,97 @@ public class EnemyControl : MonoBehaviour
             Destroy(gameObject);
         }
 
+        // Hit timer decrease when > 0
+        if (hitTm > 0f)
+            hitTm -= Time.deltaTime;
+        if (hitTm < 0f)
+            hitTm = 0f;
+
         //Always get the state of the animator
         enemySInfo = enemyANI.GetCurrentAnimatorStateInfo(0);
 
         //Change animator state by x velocity
-        if (enemySInfo.IsName("EnemyStand") || enemySInfo.IsName("EnemyWalk") || enemySInfo.IsName("EnemyRun"))
+        if (hitTm == 0f)
         {
-            if (enemyRB.velocity.x <= -3f)
+            if (enemySInfo.IsName("EnemyStand") || enemySInfo.IsName("EnemyWalk") || enemySInfo.IsName("EnemyRun"))
             {
-                enemyANI.Play("EnemyRun");
-                enemySR.flipX = true;
-            }
-
-            if (enemyRB.velocity.x <= -0.1f && enemyRB.velocity.x > -3f)
-            {
-                enemyANI.Play("EnemyWalk");
-                enemySR.flipX = true;
-            }
-
-            if (enemyRB.velocity.x <= 0.1f && enemyRB.velocity.x > -0.1f)
-            {
-                enemyANI.Play("EnemyStand");
-            }
-
-            if (enemyRB.velocity.x <= 3f && enemyRB.velocity.x > 0.1f)
-            {
-                enemyANI.Play("EnemyWalk");
-                enemySR.flipX = false;
-            }
-
-            if (enemyRB.velocity.x > 3f)
-            {
-                enemyANI.Play("EnemyRun");
-                enemySR.flipX = false;
-            }
-        }
-
-
-        xDiff = transform.position.x - player.transform.position.x;
-        yDiff = transform.position.y - player.transform.position.y;
-
-        if (yDiff < 1)
-        {
-            if (xDiff > 2 && xDiff <= 5 && enemyRB.velocity.x <= 4f && enemyRB.velocity.x >= -4f)
-            {
-                enemyRB.AddForce(new Vector2(-500f * Time.deltaTime, 0), ForceMode2D.Force);
-            }
-            else if (xDiff < -2 && xDiff >= -5 && enemyRB.velocity.x >= -4f && enemyRB.velocity.x <= 4f)
-            {
-                enemyRB.AddForce(new Vector2(500f * Time.deltaTime, 0), ForceMode2D.Force);
-            }
-
-            if (xDiff >= 0 && xDiff <= 2 && enemySInfo.IsName("EnemyStand"))
-            {
-                Debug.Log("Right Triggered");
-                enemySR.flipX = true;
-                gameObject.transform.GetChild(0).gameObject.transform.localScale = new Vector2(-1, 1);
-
-                int moveChoice = Random.Range(1, 3);
-                switch (moveChoice)
+                if (enemyRB.velocity.x <= -3f)
                 {
-                    case 1:
-                        enemyANI.Play("EnemyPunchL");
-                        break;
-                    case 2:
-                        enemyANI.Play("EnemyPunchR");
-                        break;
+                    enemyANI.Play("EnemyRun");
+                    enemySR.flipX = true;
+                }
+
+                if (enemyRB.velocity.x <= -0.1f && enemyRB.velocity.x > -3f)
+                {
+                    enemyANI.Play("EnemyWalk");
+                    enemySR.flipX = true;
+                }
+
+                if (enemyRB.velocity.x <= 0.1f && enemyRB.velocity.x > -0.1f)
+                {
+                    enemyANI.Play("EnemyStand");
+                }
+
+                if (enemyRB.velocity.x <= 3f && enemyRB.velocity.x > 0.1f)
+                {
+                    enemyANI.Play("EnemyWalk");
+                    enemySR.flipX = false;
+                }
+
+                if (enemyRB.velocity.x > 3f)
+                {
+                    enemyANI.Play("EnemyRun");
+                    enemySR.flipX = false;
                 }
             }
-            if (xDiff <= 0 && xDiff >= -2 && enemySInfo.IsName("EnemyStand"))
-            {
-                Debug.Log("Left Triggered");
-                enemySR.flipX = false;
-                gameObject.transform.GetChild(0).gameObject.transform.localScale = new Vector2(1, 1);
 
-                int moveChoice = Random.Range(1, 3);
-                switch (moveChoice)
+            xDiff = transform.position.x - player.transform.position.x;
+            yDiff = transform.position.y - player.transform.position.y;
+
+            if (yDiff < 1)
+            {
+                if (xDiff > 2 && xDiff <= 5 && enemyRB.velocity.x <= 4f && enemyRB.velocity.x >= -4f)
                 {
-                    case 1:
-                        enemyANI.Play("EnemyPunchL");
-                        break;
-                    case 2:
-                        enemyANI.Play("EnemyPunchR");
-                        break;
+                    enemyRB.AddForce(new Vector2(-500f * Time.deltaTime, 0), ForceMode2D.Force);
+                }
+                else if (xDiff < -2 && xDiff >= -5 && enemyRB.velocity.x >= -4f && enemyRB.velocity.x <= 4f)
+                {
+                    enemyRB.AddForce(new Vector2(500f * Time.deltaTime, 0), ForceMode2D.Force);
+                }
+
+                if (xDiff >= 0 && xDiff <= 2 && enemySInfo.IsName("EnemyStand"))
+                {
+                    Debug.Log("Right Triggered");
+                    enemySR.flipX = true;
+                    gameObject.transform.GetChild(0).gameObject.transform.localScale = new Vector2(-1, 1);
+
+                    int moveChoice = Random.Range(1, 3);
+                    switch (moveChoice)
+                    {
+                        case 1:
+                            enemyANI.Play("EnemyPunchL");
+                            break;
+                        case 2:
+                            enemyANI.Play("EnemyPunchR");
+                            break;
+                    }
+                }
+                if (xDiff <= 0 && xDiff >= -2 && enemySInfo.IsName("EnemyStand"))
+                {
+                    Debug.Log("Left Triggered");
+                    enemySR.flipX = false;
+                    gameObject.transform.GetChild(0).gameObject.transform.localScale = new Vector2(1, 1);
+
+                    int moveChoice = Random.Range(1, 3);
+                    switch (moveChoice)
+                    {
+                        case 1:
+                            enemyANI.Play("EnemyPunchL");
+                            break;
+                        case 2:
+                            enemyANI.Play("EnemyPunchR");
+                            break;
+                    }
                 }
             }
         }
@@ -148,6 +161,20 @@ public class EnemyControl : MonoBehaviour
             {
                 Debug.Log("Hit!!");
                 HP -= 10;
+
+                //play animation
+                enemyANI.Play("EnemyHit");
+                hitTm = 0.2f;
+                if (collision.transform.GetComponentInParent<SpriteRenderer>().flipX)
+                {
+                    enemyRB.AddForce(new Vector2(-3f, 1f), ForceMode2D.Impulse);
+                    enemySR.flipX = false;
+                }
+                else
+                {
+                    enemyRB.AddForce(new Vector2(3f, 1f), ForceMode2D.Impulse);
+                    enemySR.flipX = true;
+                }
             }
         }
     }

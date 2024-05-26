@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,6 +16,11 @@ public class PlayerControl : MonoBehaviour
     private SpriteRenderer playerSR;
 
     public MessageControl message;
+
+    private float timer;
+    private float hitTm;
+
+    public GDTFadeEffect GDT;
     #endregion
  
     void Start()
@@ -28,6 +31,9 @@ public class PlayerControl : MonoBehaviour
 
         HPbar.fillAmount = 1;
         HP = 100;
+
+        timer = 0;
+        hitTm = 0;
     }
  
 
@@ -39,6 +45,21 @@ public class PlayerControl : MonoBehaviour
             SceneManager.LoadScene("GameOverScene");
         }
 
+        //Timer count after triggered
+        if (timer > 0f)
+            timer += Time.deltaTime;
+        if (timer > 3f)
+        {
+            //show success scene
+            SceneManager.LoadScene("GameCompleteScene");
+        }
+
+        // Hit timer decrease when > 0
+        if (hitTm > 0f)
+            hitTm -= Time.deltaTime;
+        if (hitTm < 0f)
+            hitTm = 0f;
+
         //Always get the state of the animator
         playerSInfo = playerANI.GetCurrentAnimatorStateInfo(0);
 
@@ -46,37 +67,41 @@ public class PlayerControl : MonoBehaviour
         {
             #region [Input: Keyboard]
             //Change animator state by x velocity
-            if (playerSInfo.IsName("PlayerStand") || playerSInfo.IsName("PlayerWalk") || playerSInfo.IsName("PlayerRun"))
+            if (hitTm == 0f)
             {
-                if (playerRB.velocity.x <= -3f)
+                if (playerSInfo.IsName("PlayerStand") || playerSInfo.IsName("PlayerWalk") || playerSInfo.IsName("PlayerRun"))
                 {
-                    playerANI.Play("PlayerRun");
-                    playerSR.flipX = true;
-                }
+                    if (playerRB.velocity.x <= -3f)
+                    {
+                        playerANI.Play("PlayerRun");
+                        playerSR.flipX = true;
+                    }
 
-                if (playerRB.velocity.x <= -0.1f && playerRB.velocity.x > -3f)
-                {
-                    playerANI.Play("PlayerWalk");
-                    playerSR.flipX = true;
-                }
+                    if (playerRB.velocity.x <= -0.1f && playerRB.velocity.x > -3f)
+                    {
+                        playerANI.Play("PlayerWalk");
+                        playerSR.flipX = true;
+                    }
 
-                if (playerRB.velocity.x <= 0.1f && playerRB.velocity.x > -0.1f)
-                {
-                    playerANI.Play("PlayerStand");
-                }
+                    if (playerRB.velocity.x <= 0.1f && playerRB.velocity.x > -0.1f)
+                    {
+                        playerANI.Play("PlayerStand");
+                    }
 
-                if (playerRB.velocity.x <= 3f && playerRB.velocity.x > 0.1f)
-                {
-                    playerANI.Play("PlayerWalk");
-                    playerSR.flipX = false;
-                }
+                    if (playerRB.velocity.x <= 3f && playerRB.velocity.x > 0.1f)
+                    {
+                        playerANI.Play("PlayerWalk");
+                        playerSR.flipX = false;
+                    }
 
-                if (playerRB.velocity.x > 3f)
-                {
-                    playerANI.Play("PlayerRun");
-                    playerSR.flipX = false;
+                    if (playerRB.velocity.x > 3f)
+                    {
+                        playerANI.Play("PlayerRun");
+                        playerSR.flipX = false;
+                    }
                 }
             }
+
 
             //Change animator state by y velocity
             if (playerSInfo.IsName("PlayerJump"))
@@ -88,46 +113,49 @@ public class PlayerControl : MonoBehaviour
             }
 
             //increase velocity when press L/R key down
-            if (!playerSInfo.IsName("PlayerJump") && !playerSInfo.IsName("PlayerDuck"))
+            if (hitTm == 0f)
             {
-                if (Input.GetKey(KeyCode.RightArrow) && playerRB.velocity.x <= 7f)
+                if (!playerSInfo.IsName("PlayerJump") && !playerSInfo.IsName("PlayerDuck"))
                 {
-                    playerRB.AddForce(new Vector2(1000f * Time.deltaTime, 0), ForceMode2D.Force);
+                    if (Input.GetKey(KeyCode.RightArrow) && playerRB.velocity.x <= 7f)
+                    {
+                        playerRB.AddForce(new Vector2(1000f * Time.deltaTime, 0), ForceMode2D.Force);
+                    }
+                    if (Input.GetKey(KeyCode.LeftArrow) && playerRB.velocity.x >= -7f)
+                    {
+                        playerRB.AddForce(new Vector2(-1000f * Time.deltaTime, 0), ForceMode2D.Force);
+                    }
                 }
-                if (Input.GetKey(KeyCode.LeftArrow) && playerRB.velocity.x >= -7f)
+                else
                 {
-                    playerRB.AddForce(new Vector2(-1000f * Time.deltaTime, 0), ForceMode2D.Force);
-                }
-            }
-            else
-            {
-                //Change the direction of player
-                if (playerRB.velocity.x > 0.1f)
-                    playerSR.flipX = false;
+                    //Change the direction of player
+                    if (playerRB.velocity.x > 0.1f)
+                        playerSR.flipX = false;
 
-                if (playerRB.velocity.x < -0.1f)
-                    playerSR.flipX = true;
+                    if (playerRB.velocity.x < -0.1f)
+                        playerSR.flipX = true;
 
-                //Change velocity when get key
-                if (Input.GetKey(KeyCode.RightArrow))
-                {
-                    playerRB.velocity = new Vector2(5f, playerRB.velocity.y);
-                }
-                if (Input.GetKey(KeyCode.LeftArrow))
-                {
-                    playerRB.velocity = new Vector2(-5f, playerRB.velocity.y);
+                    //Change velocity when get key
+                    if (Input.GetKey(KeyCode.RightArrow))
+                    {
+                        playerRB.velocity = new Vector2(5f, playerRB.velocity.y);
+                    }
+                    if (Input.GetKey(KeyCode.LeftArrow))
+                    {
+                        playerRB.velocity = new Vector2(-5f, playerRB.velocity.y);
+                    }
                 }
             }
 
             //Jump
-            if (!playerSInfo.IsName("PlayerJump") && Input.GetKeyDown(KeyCode.UpArrow))
+            if (hitTm == 0f && !playerSInfo.IsName("PlayerJump") && Input.GetKeyDown(KeyCode.UpArrow))
             {
                 playerANI.Play("PlayerJump");
                 playerRB.AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);
             }
 
             //Duck
-            if (!playerSInfo.IsName("PlayerDuck") && Input.GetKeyDown(KeyCode.DownArrow))
+            if (hitTm == 0f && !playerSInfo.IsName("PlayerDuck") && Input.GetKeyDown(KeyCode.DownArrow))
             {
                 playerANI.Play("PlayerDuck");
                 playerRB.AddForce(new Vector2(0f, -7f), ForceMode2D.Impulse);
@@ -138,8 +166,18 @@ public class PlayerControl : MonoBehaviour
             }
 
             //Attack
-            if ((!playerSInfo.IsName("PlayerChop") && !playerSInfo.IsName("PlayerCutU")) && Input.GetKeyDown(KeyCode.Space))
+            if ((hitTm == 0f && !playerSInfo.IsName("PlayerChop") && !playerSInfo.IsName("PlayerCutU")) && Input.GetKeyDown(KeyCode.Space))
             {
+                if (playerSR.flipX)
+                {
+                    //flip sword
+                    gameObject.transform.GetChild(0).gameObject.transform.localScale = new Vector2(-1, 1);
+                }
+                else
+                {
+                    gameObject.transform.GetChild(0).gameObject.transform.localScale = new Vector2(1, 1);
+                }
+
                 int moveChoice = Random.Range(1, 3);
                 switch (moveChoice)
                 {
@@ -183,6 +221,20 @@ public class PlayerControl : MonoBehaviour
                 Debug.Log("Hit!!");
                 HP -= 10;
                 HPbar.fillAmount = HP / 100f;
+
+                //play animation
+                playerANI.Play("PlayerHit");
+                hitTm = 0.2f;
+                if (collision.transform.GetComponentInParent<SpriteRenderer>().flipX)
+                {
+                    playerRB.AddForce(new Vector2(-3f, 1f), ForceMode2D.Impulse);
+                    playerSR.flipX = false;
+                }
+                else
+                {
+                    playerRB.AddForce(new Vector2(3f, 1f), ForceMode2D.Impulse);
+                    playerSR.flipX = true;
+                }
             }
         }
 
@@ -204,8 +256,12 @@ public class PlayerControl : MonoBehaviour
             {
                 Debug.Log("Game complete");
 
-                //show success scene
-                SceneManager.LoadScene("GameCompleteScene");
+                if (timer == 0)
+                {
+                    timer = 1;
+                    GDT.firstToLast = true;
+                    GDT.gameObject.SetActive(true);
+                }
             }
         }
     }

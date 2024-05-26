@@ -9,14 +9,9 @@ public class BGM : MonoBehaviour
     {
         source = GetComponent<AudioSource>();
         source.clip = bgm[0];
-        source.volume = 0.3f;
+        source.volume = 0.3f * Global.VOLUME;
         source.loop = true;
         source.Play();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
