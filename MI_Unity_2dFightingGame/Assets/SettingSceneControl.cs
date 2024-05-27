@@ -14,7 +14,15 @@ public class SettingSceneControl : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         btnBack.onClick.AddListener(ChangeScene);
         sliderVolume.value = Global.VOLUME;
-        sliderVolume.onValueChanged.AddListener(ChangeVolume);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+            ChangeVolumeDec();
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+            ChangeVolumeInc();
     }
 
     private void ChangeScene()
@@ -22,11 +30,25 @@ public class SettingSceneControl : MonoBehaviour
         SceneManager.LoadScene("StartScene");
     }
 
-    private void ChangeVolume(float value)
+    private void ChangeVolumeInc()
     {
-        Global.VOLUME = value;
+        Global.VOLUME += 0.2f;
+        if (Global.VOLUME > 1f)
+            Global.VOLUME = 1f;
+
+        sliderVolume.value = Global.VOLUME;
         audioSource.volume = Global.VOLUME;
-        if (!audioSource.isPlaying)
-            audioSource.Play();
+        audioSource.Play();
+    }
+
+    private void ChangeVolumeDec()
+    {
+        Global.VOLUME -= 0.2f;
+        if (Global.VOLUME < 0f)
+            Global.VOLUME = 0f;
+
+        sliderVolume.value = Global.VOLUME;
+        audioSource.volume = Global.VOLUME;
+        audioSource.Play();
     }
 }
