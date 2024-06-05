@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|c:\\users\\akilis\\documents\\github\\mi_unity_2dfigthinggame\\mi_unity_2dfightinggame\\assets\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\player\\messagecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\messagecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\settingscenecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\settingscenecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\gameovercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\gameovercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|c:\\users\\akilis\\documents\\github\\mi_unity_2dfigthinggame\\mi_unity_2dfightinggame\\assets\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\settingscenecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\settingscenecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\musics\\bgm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +35,12 @@
       "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\gamecompletecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\gameovercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\gameovercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\parallaxscrolling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\parallaxscrolling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBF8492B-9AC8-ADC2-D9F9-6E7CC29487A7}|Assembly-CSharp.csproj|C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\assets\\startscenecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Global.cs",
               "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\Global.cs",
               "RelativeDocumentMoniker": "Assets\\Global.cs",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "SettingSceneControl.cs",
               "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\SettingSceneControl.cs",
               "RelativeDocumentMoniker": "Assets\\SettingSceneControl.cs",
@@ -82,12 +82,11 @@
               "RelativeToolTip": "Assets\\SettingSceneControl.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAwwCgAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T13:50:49.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T13:50:49.561Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "BGM.cs",
               "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\Musics\\BGM.cs",
               "RelativeDocumentMoniker": "Assets\\Musics\\BGM.cs",
@@ -99,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "GameCompleteControl.cs",
               "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\GameCompleteControl.cs",
               "RelativeDocumentMoniker": "Assets\\GameCompleteControl.cs",
@@ -111,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MessageControl.cs",
               "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\Player\\MessageControl.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\MessageControl.cs",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "Assets\\Player\\MessageControl.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T12:12:22.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T12:12:22.66Z"
             },
             {
               "$type": "Document",
@@ -136,31 +134,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "PlayerControl.cs",
               "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\Player\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\PlayerControl.cs",
               "ToolTip": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\Player\\PlayerControl.cs",
               "RelativeToolTip": "Assets\\Player\\PlayerControl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAANAAAA",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAywIkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T11:34:16.489Z"
+              "WhenOpened": "2024-05-18T11:34:16.489Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "GameOverControl.cs",
               "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\GameOverControl.cs",
               "RelativeDocumentMoniker": "Assets\\GameOverControl.cs",
               "ToolTip": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\GameOverControl.cs",
               "RelativeToolTip": "Assets\\GameOverControl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T14:34:50.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "EnemyControl.cs",
               "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\Enemy\\EnemyControl.cs",
               "RelativeDocumentMoniker": "Assets\\Enemy\\EnemyControl.cs",
@@ -172,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CameraMovement.cs",
               "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\CameraMovement.cs",
               "RelativeDocumentMoniker": "Assets\\CameraMovement.cs",
@@ -185,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ParallaxScrolling.cs",
               "DocumentMoniker": "C:\\Users\\Akilis\\Documents\\GitHub\\MI_Unity_2dFigthingGame\\MI_Unity_2dFightingGame\\Assets\\ParallaxScrolling.cs",
               "RelativeDocumentMoniker": "Assets\\ParallaxScrolling.cs",
