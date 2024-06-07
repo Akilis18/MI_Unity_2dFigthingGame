@@ -90,8 +90,8 @@
     <Compile Include="Assets\Standard Assets\Windows\Kinect\AudioBeamFrameReference.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\FrameCapturedEventArgs.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\MultiSourceFrameReference.cs" />
-    <Compile Include="Assets\Standard Assets\Windows\Kinect\KinectCapabilities.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\JointOrientation.cs" />
+    <Compile Include="Assets\Standard Assets\Windows\Kinect\KinectCapabilities.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\ColorSpacePoint.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\InfraredFrameSource.cs" />
     <Compile Include="Assets\Standard Assets\ExceptionHelper.cs" />
